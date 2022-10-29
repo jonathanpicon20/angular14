@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './commons/components/header/header.component';
-import { FooterComponent } from './commons/components/footer/footer.component';
-import { MainComponent } from './commons/components/main/main.component';
-import { RegistroComponent } from './commons/components/registro/registro.component';
+import { ContainerModule } from './commons/components/container/container.module';
+import { LoginComponent } from './pages/login-page/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRountingModule } from './app-routing.module';
+import { RegistroComponent } from './pages/registro-page/registro.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    MainComponent,
-    RegistroComponent,
-  ],
+  declarations: [AppComponent, LoginComponent, RegistroComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    ContainerModule,
+    AppRountingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

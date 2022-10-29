@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  .rout {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    .routi {
+      background-color: blue;
+      width: 55%;
+    }
+  }
+}

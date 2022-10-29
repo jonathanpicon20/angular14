@@ -1,0 +1,36 @@
+@use "../../../../assets/styles/variables.scss" as va;
+.card {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  max-width: 30rem;
+  background-color: va.$secondary-color;
+  box-shadow: 0px 4px 8px rgba(41, 54, 84, 0.5);
+  .card-info {
+    display: flex;
+    color: va.$primary-color;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+    .sub {
+      color: va.$accent-color;
+      display: flex;
+      justify-content: space-between;
+      &__genero {
+        color: white;
+      }
+    }
+  }
+  .imagen {
+    background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+    background-size: cover;
+  }
+  .card-footer {
+    text-align: center;
+    h2 {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "../../../../../assets/styles/variables.scss" as va;
+
+.header {
+  width: 100%;
+  background-color: va.$secondary-color;
+
+  .container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: va.$white;
+    gap: 10rem;
+    padding: 1rem;
+    .pack {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .tittle {
+        font-weight: 500;
+        margin: 0;
+      }
+      &__logo {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+    .search {
+      width: 30rem;
+      height: 3rem;
+      border-radius: 1rem;
+    }
+    .buttoms {
+    }
+  }
+}
