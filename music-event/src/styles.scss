@@ -2,7 +2,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
-@use "../src/assets/styles/variables.scss";
+@use "../src/assets/styles/variables.scss" as va;
 @import "~normalize.css";
 
 // Plus imports for other components in your app.
@@ -54,7 +54,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: variables.$font-family;
+  font-family: va.$font-family;
   font-size: 1.6rem;
   line-height: 2;
 }
@@ -66,4 +66,25 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #8f7345;
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-label {
+    color: va.$primary-color;
+  }
+
+  textarea.mat-input-element {
+    color: white;
+  }
+
+  input.mat-input-element {
+    color: white;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
 }

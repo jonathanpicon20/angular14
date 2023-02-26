@@ -1,0 +1,20 @@
+@use "../../../assets/styles/variables.scss" as var;
+
+.container {
+  border-radius: 0.5rem;
+  max-width: 40rem;
+  color: var.$primary-color;
+  text-align: center;
+  background-color: var.$secondary-color;
+  .form {
+    display: flex;
+    flex-direction: column;
+    &__input {
+      border-color: var.$primary-color;
+    }
+    &__boton {
+      align-self: center;
+      font-weight: bold;
+    }
+  }
+}

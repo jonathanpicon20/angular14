@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardEventComponent } from './card-event.component';
+import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { CardEventComponent } from './card-event.component';
 
 @NgModule({
   declarations: [CardEventComponent],

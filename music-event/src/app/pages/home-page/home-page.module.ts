@@ -6,5 +6,6 @@ import { HomePageComponent } from './home-page.component';
 @NgModule({
   declarations: [HomePageComponent],
   imports: [CommonModule, CardEventModule],
+  exports: [HomePageComponent],
 })
 export class HomePageModule {}
