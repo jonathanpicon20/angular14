@@ -5,6 +5,7 @@ import { AppRountingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerModule } from './commons/components/container/container.module';
 import { RecoveryPassPageModule } from './pages/recovery-pass-page/recovery-pass-page.module';
+import { MantenimientoModule } from './pages/mantenimiento/mantenimiento.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { RecoveryPassPageModule } from './pages/recovery-pass-page/recovery-pass
     ContainerModule,
     AppRountingModule,
     RecoveryPassPageModule,
+    MantenimientoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,26 +1,41 @@
-<div class="container">
-  <div class="text-float">
-    <p>Regístrate, ingresa tus datos</p>
-  </div>
-  <div class="registro">
-    <form class="form" action="">
-      <label>REGISTRO</label>
-      <input type="text" placeholder="Nombre" />
-      <input type="text" placeholder="Apellidos" />
-      <input type="email" placeholder="E-mail" />
-      <input type="number" placeholder="Edad" maxlength="2" />
-      <input type="password" placeholder="Contraseña" />
-      <input type="password" placeholder="Repetir Contraseña" />
-      <select name="Documento">
-        <option>DNI</option>
-        <option>Carnet Extranjeria</option>
-        <option>Passaporte</option>
-      </select>
-      <input type="tel" placeholder="Nro de Documento" maxlength="8" />
-      <button class="buttom" type="submit">INGRESAR</button>
-      <div class="ingresa">
-        <p>Si ya tienes una cuenta <a routerLink="/login">ingresa</a></p>
-      </div>
-    </form>
-  </div>
-</div>
+<mat-card class="container">
+  <form class="example-form form">
+    <span>REGISTRO</span>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="demo" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Apellidos</mat-label>
+      <input matInput placeholder="demo" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>E-Mail</mat-label>
+      <input type="email" matInput />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Contraseña</mat-label>
+      <input type="password" matInput placeholder="****" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Repetir Contraseña</mat-label>
+      <input type="password" matInput placeholder="****" />
+    </mat-form-field>
+
+    <mat-form-field class="select" appearance="outline">
+      <mat-label>Documento</mat-label>
+      <mat-select value="selected">
+        <mat-option value="option1">DNI</mat-option>
+        <mat-option value="option2">Carnet Extranjeria</mat-option>
+        <mat-option value="option3">Pasaporte</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Nro de Documento</mat-label>
+      <input type="number" matInput placeholder="0000000" maxlength="8" />
+    </mat-form-field>
+    <div class="example-button-row">
+      <button class="boton" mat-raised-button color="primary">REGISTRAR</button>
+    </div>
+  </form>
+</mat-card>

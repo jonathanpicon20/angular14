@@ -1,11 +1,22 @@
 @use "../../../assets/styles/variables.scss" as var;
 
 .container {
-  border-radius: 0.5rem;
-  max-width: 40rem;
-  color: var.$primary-color;
+  border-radius: 1rem;
+  max-width: 30rem;
+  min-height: 40rem;
+  color: white;
   text-align: center;
   background-color: var.$secondary-color;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+
+  h2 {
+    color: var.$primary-color;
+  }
   .form {
     display: flex;
     flex-direction: column;
@@ -15,6 +26,9 @@
     &__boton {
       align-self: center;
       font-weight: bold;
+    }
+    &__text .span {
+      color: var.$accent-color;
     }
   }
 }
